@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input{
+  background: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px 	#999999 solid;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+input:focus{
+  outline: none;
+  border-bottom: 2px #555555 solid;
+}
+.btn{
+  text-align: center;
+  
+}
+.registration{
+  background-color: antiquewhite;
+}
+.registration-head{
+  margin: auto 35px;
+}
+.registration-form{
+  background-color: #70dbdb;
+  padding: 12px 10px;
+}
+.registration-form label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.outline{
+color:#666633;
+font-size: 16px;
+font-weight: medium;
+}
+/* end of registration part */
+/* start of login part */
+.login{
+  
+  background-color: antiquewhite;
+
+}
+.login-head{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-outline{
+  background-color: #70dbdb;
+  margin-bottom: 10px;
+}
+.login-form label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* end of login part  */
+/* start header part  */
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* margin: auto 40px; */
+}
+
+li {
+  list-style: none;
+  padding: 20px;
+}
+
+nav {
+  background-color: #edf0ed;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.nav-toggle {
+  display: none;
+}
+.a{
+ text-decoration: none;
+}
+.a:hover{
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 850px) {
+  .links {
+      display: none;
+  }
+
+  .nav-toggle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      transition: all 0.8s;
+      margin-left: auto;
+      margin-right: 20px;
+  }
+
+  nav {
+      padding: 15px;
+  }
+
+  .navlinks {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+}
+/* header part end  */
+
+/* home page start  */
+.home{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #b4a7d6;
+}
+.home-text{
+  color: #225599;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+@media screen and (max-width:400px) {
+  .home-text{
+    color: #225599;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+/* end of home page code  */
+/* About page design :start  */
+.about{
+  margin: 0 auto;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: #225599; */
+}
+.card{
+  width: 15rem;
+  height: auto;
+}
+.about-text{
+  color: #555555;
+  font-size: 1.4rem;
+  font-family: 'Pushster', cursive;
+}
